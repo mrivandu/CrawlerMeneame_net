@@ -8,4 +8,5 @@ class MeneameSpiderSpider(scrapy.Spider):
     start_urls = ['https://www.meneame.net/']
 
     def parse(self, response):
-        pass
+        with open('result.text','w') as text_object:
+            text_object.writelines(response.text)
