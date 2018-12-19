@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from Crawler_meneame.net.CrawlerMeneame.CrawlerMeneame.items import CrawlermeneameIte
+from CrawlerMeneame_net.CrawlerMeneame.CrawlerMeneame.items import CrawlermeneameIte
 
 class MeneameSpider(scrapy.Spider):
     name = 'Meneame'
