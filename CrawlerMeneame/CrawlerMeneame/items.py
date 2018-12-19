@@ -11,4 +11,5 @@ import scrapy
 class CrawlermeneameItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    article = scrapy.Field()
+    article_context = scrapy.Field()
