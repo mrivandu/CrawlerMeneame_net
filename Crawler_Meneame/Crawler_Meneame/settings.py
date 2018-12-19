@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for properties project
+# Scrapy settings for Crawler_Meneame project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'properties'
+BOT_NAME = 'Crawler_Meneame'
 
-SPIDER_MODULES = ['properties.spiders']
-NEWSPIDER_MODULE = 'properties.spiders'
+SPIDER_MODULES = ['Crawler_Meneame.spiders']
+NEWSPIDER_MODULE = 'Crawler_Meneame.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'properties (+http://www.yourdomain.com)'
+#USER_AGENT = 'Crawler_Meneame (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'properties.middlewares.PropertiesSpiderMiddleware': 543,
+#    'Crawler_Meneame.middlewares.CrawlerMeneameSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'properties.middlewares.PropertiesDownloaderMiddleware': 543,
+#    'Crawler_Meneame.middlewares.CrawlerMeneameDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'properties.pipelines.PropertiesPipeline': 300,
+#    'Crawler_Meneame.pipelines.CrawlerMeneamePipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
