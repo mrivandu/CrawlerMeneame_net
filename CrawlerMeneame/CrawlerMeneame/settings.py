@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for Crawler_Meneame project
+# Scrapy settings for CrawlerMeneame project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,17 +9,17 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'Crawler_Meneame'
+BOT_NAME = 'CrawlerMeneame'
 
-SPIDER_MODULES = ['Crawler_Meneame.spiders']
-NEWSPIDER_MODULE = 'Crawler_Meneame.spiders'
+SPIDER_MODULES = ['CrawlerMeneame.spiders']
+NEWSPIDER_MODULE = 'CrawlerMeneame.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'Crawler_Meneame (+http://www.yourdomain.com)'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'Crawler_Meneame.middlewares.CrawlerMeneameSpiderMiddleware': 543,
+#    'CrawlerMeneame.middlewares.CrawlermeneameSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'Crawler_Meneame.middlewares.CrawlerMeneameDownloaderMiddleware': 543,
+#    'CrawlerMeneame.middlewares.CrawlermeneameDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'Crawler_Meneame.pipelines.CrawlerMeneamePipeline': 300,
+#    'CrawlerMeneame.pipelines.CrawlermeneamePipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
