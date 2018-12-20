@@ -13,3 +13,4 @@ class CrawlermeneameItem(scrapy.Item):
     # name = scrapy.Field()
     article_titile = scrapy.Field()
     article_context = scrapy.Field()
+    article_comment = scrapy.Field()
