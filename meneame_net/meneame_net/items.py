@@ -8,9 +8,9 @@
 import scrapy
 
 
-class CrawlermeneameItem(scrapy.Item):
+class MeneameNetItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     article_titile = scrapy.Field()
-    article_context = scrapy.Field()
+    article_content = scrapy.Field()
     article_comment = scrapy.Field()
