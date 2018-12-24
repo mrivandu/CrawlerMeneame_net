@@ -2,8 +2,7 @@
 import scrapy
 import re
 import requests
-#from meneame_net.items import MeneameNetItem
-
+from items import MeneameNetItem
 
 class MeneameSpider(scrapy.Spider):
     name = 'meneame'
@@ -35,6 +34,7 @@ class MeneameSpider(scrapy.Spider):
                 else:
                     continue
 
-
     def target_parse(self,response):
-        print('============'+response.url+'============')
+        target_root_xpath_list = response.xpath("//div[@id='newswrap']/div")
+        for root_xpath in target_root_xpath_list:
+            pass
