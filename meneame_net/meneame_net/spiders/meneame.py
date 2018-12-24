@@ -12,6 +12,7 @@ class MeneameSpider(scrapy.Spider):
     def parse(self, response):
         try:
             total_pages_url = response.xpath("//div[@class='pages margin']/a[last()-1]").extract()[0]
+            print(total_pages_url)
             total_pages = int(re.findall(r'\d+',total_pages_url)[0])
             for sub_url in self.start_urls:
                 for page_num in range(1,total_pages+1):
