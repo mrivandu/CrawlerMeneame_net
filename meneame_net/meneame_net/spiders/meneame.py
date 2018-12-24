@@ -2,7 +2,7 @@
 import scrapy
 import re
 import requests
-from items import MeneameNetItem
+from meneame_net.items import MeneameNetItem
 
 class MeneameSpider(scrapy.Spider):
     name = 'meneame'
