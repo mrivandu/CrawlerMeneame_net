@@ -15,7 +15,7 @@ class MeneameSpider(scrapy.Spider):
                 sub_url_str = response.xpath("//div[@class='pages margin']/a[last()-1]/@href").extract()[0]
                 total_pages = int(re.findall(r'\d+',sub_url_str)[0])
                 if response.url == sub_url:
-                    for page_num in range(2,total_pages-7668):
+                    for page_num in range(2,total_pages):
                         new_sub_url = sub_url + "/?page=" +str(page_num)
                         yield scrapy.Request(new_sub_url,callback=self.sub_parse)
                 else:
@@ -40,5 +40,5 @@ class MeneameSpider(scrapy.Spider):
             meneame_item = MeneameNetItem()
             meneame_item['article_titile'] = root_xpath.xpath(".//div[@class='news-summary']/div[@class='news-body']/div[@class='center-content']/h2/a/text()").extract_first()
             meneame_item['article_content'] = root_xpath.xpath(".//div[@class='news-summary']/div[@class='news-body']/div[@class='center-content']/div[@class='news-content']/text()").extract_first()
-            meneame_item['article_comment'] = root_xpath.xpath(".//div[@id='comments-top']/div[descendant-or-self::text()]//div[@class='comment-text']/text()").extract()
+         #  meneame_item['article_comment'] = root_xpath.xpath(".//div[@id='comments-top']/div[descendant-or-self::text()]//div[@class='comment-text']/text()").extract()
             yield meneame_item
